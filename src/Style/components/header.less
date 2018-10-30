@@ -1,0 +1,47 @@
+header {
+    position: relative;;
+    color: #fff;
+    background: @color-cornflower-blue;
+
+    margin: -20px -20px 20px;
+
+    a {
+        color: #fff;
+
+        &:visited,
+        &:active,
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .occupation {
+        margin-bottom: 20px;
+    }
+
+    .contacts-container {
+        > div {
+            margin-bottom: 5px;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    header {
+        padding: 20px;
+
+        .avatar-container {
+            width: 128px;
+            margin: 0 auto;
+        }
+
+        .vcard-container {
+            max-width: 380px;
+            margin: 0 auto;
+        }
+    }
+}

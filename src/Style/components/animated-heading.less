@@ -1,0 +1,24 @@
+@keyframes expand {
+    0%   {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.animated-heading {
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+    .underline {
+        float: left;
+        border-bottom: 1px solid #000;
+        animation-fill-mode: forwards;
+    }
+}
+
+.expand {
+    animation-name: expand;
+}

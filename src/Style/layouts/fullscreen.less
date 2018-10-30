@@ -1,0 +1,34 @@
+.layout-fullscreen {
+    position: relative;
+
+    .page-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0 0;
+
+        .directions-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+
+            a,
+            a:active,
+            a:visited,
+            a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            .directions-message {
+                font-size: 2em;
+            }
+        }
+    }
+}
